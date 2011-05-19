@@ -1,0 +1,8 @@
+%h1 file upload
+	
+%form{ :action => "/upload_file", :method => "post", :enctype=>"multipart/form-data"}
+	%div
+		%label{:for => "upload[file]"} file:
+		%input{:type => "file", :name => "upload[file]"}
+	%div
+		%input{:type => "submit", :value => "Upload", :class => "button"}
