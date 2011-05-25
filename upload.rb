@@ -20,4 +20,5 @@ post "/upload_file" do
 			"data"=>f[:tempfile].read
 		}
 	}})
+	"upload successful"
 end
