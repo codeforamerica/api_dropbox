@@ -1,6 +1,6 @@
 - type ||= "text"
 %div
-	%label{:for => "upload[#{name}]"} #{name}:
+	%label{:for => "upload[#{name}]"} #{name.gsub('_',' ').capitalize}:
 	- if type == "textarea"
 		%textarea{:name => "upload[#{name}]"}
 	-else

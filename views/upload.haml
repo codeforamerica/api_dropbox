@@ -1,7 +1,7 @@
 %h1 file upload
 
 %form{ :action => "/upload_file", :method => "post", :enctype=>"multipart/form-data"}
-	- ["title",["comments","textarea"],["file","file"],"data url","organization","department"].each do |(name,type)|
+	- ["title",["comments","textarea"],["file","file"],"data_url","organization","department"].each do |(name,type)|
 		= haml :_field, :locals=>{:name=>name,:type=>type} #this seems like it should be one-lineable. ah, oh well.
 	%h2 Contact Info
 	- ["name","email","phone"].each do |(name,type)|
