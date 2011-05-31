@@ -1,0 +1,7 @@
+- type ||= "text"
+%div
+	%label{:for => "upload[#{name}]"} #{name}:
+	- if type == "textarea"
+		%textarea{:name => "upload[#{name}]"}
+	-else
+		%input{:type => "#{type}", :name => "upload[#{name}]"}
