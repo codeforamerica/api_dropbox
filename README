@@ -1,1 +1,12 @@
 a simple sinatra app to facilitate browser based file uploads into a Couch database
+
+Prerequisites:
+	you should have 'bundler' and 'rack' installed on your system
+	
+Installation:
+	bundle install
+
+running
+	rackup config.ru [-p <port>]
+
+
